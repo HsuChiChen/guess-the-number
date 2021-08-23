@@ -1,21 +1,23 @@
-# Guess The Nunber
+# 二進位輸入終極密碼遊戲 (Guess The Nunber)
 ##### Final Project of Computer Organization
-Time : 2020 fall (first half semester of sophomore)
+時間 : 2020 fall (first half semester of sophomore)
 
-## Youtube demo clip
+## Youtube demo 影片
 [![](img/demo_clip.svg)](https://www.youtube.com/watch?v=LY89O8TjXG8)
 
 <br>
 
-## lecture
+## 課程
 
-|subject|teacher|
+|科目|教授|
 |:-:|:-:|
 |[計算機組織](http://class-qry.acad.ncku.edu.tw/syllabus/online_display.php?syear=0109&sem=1&co_no=E221700&class_code=2)|[陳中和](https://caslab.ee.ncku.edu.tw/)|
 
 <br>
 
-## Environment
+## 環境
+> 更多資訊在 `env/arc_env.pdf`
+
 as same as [Computer Organization lec06-lec07](https://github.com/HsuChiChen/computer-organization)
 
 1. OS
@@ -37,7 +39,7 @@ as same as [Computer Organization lec06-lec07](https://github.com/HsuChiChen/com
 
 <br>
 
-## How to Run
+## 如何執行
 1. download repo
 ```
 git clone https://github.com/HsuChiChen/guess-the-nunber.git
@@ -96,8 +98,8 @@ make run
 ### Main function
 - **初始化**:<br>
 分成在無限迴圈內跟外。
-    - 外:get GPIOs object跟設定pin腳的狀態還有初始化IIC 0
-    - 內:一些在restart之後需重設的變數
+    - 外 : get GPIOs object跟設定pin腳的狀態還有初始化IIC 0
+    - 內 : 一些在restart之後需重設的變數
 
 - **無限迴圈**:<br>
 最外層的是為了實作restart。
